@@ -1,22 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Criando gráfico interativo Covid 19
-# 
-# Projeto para criação de gráficos interativos para análise da evolução do Covid 19.Os dados foram obtidos a partir do site: https://github.com/wcota/covid19br
-
-# In[26]:
-
-
 #Bibliotecas
-
 import pandas as pd
 import plotly.express as px
 import streamlit as st 
-
-
-# In[30]:
-
 
 #Baixando do arquivo
 df = pd.read_csv('cases-brazil-states.csv')
@@ -45,10 +30,5 @@ st.write('Nessa aplicação, o usuário tem a opção de escolher o estado e o t
 st.plotly_chart(fig, use_container_width=True)
 
 st.caption('Os dados foram obtidos a partir do site: https://github.com/wcota/covid19br')
-
-
-# In[ ]:
-
-
-
+st.caption('Dados atualizados até março de 2023')
 
